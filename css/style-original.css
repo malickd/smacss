@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Site: World Children's Festival
+ * Author: Malick Diomande
+ * Created: 2014-09-04
+ * Last modified: 2014-10-09
+=========================== */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald|Cuprum|Coustard|Tulpen+One|Shadows+Into+Light);
+
+/* NAVBAR
+===================================*/
+
+/* Utilitilies and Search bar */
+.navbar-util {
+	color: #fff;
+	margin-top: 10px;
+	font-size: 13px !important;
+}
+	.navbar-util ul li {
+		display: inline;
+		padding: 0 10px;
+	}
+	.navbar-form {
+		margin-top: 0;
+		padding: 0
+	}
+@media (max-width: 414px) {
+	.hidden-xs-portrait {
+		display: none;
+	} /* Hides the utility navigation bar on certain xs (Extra Small) devices, such as
+	   * small/low resolution phones so it does overflow the navigation background */
+}
+/* Icon Bar OR Hamburger Menu */
+.navbar-inverse .navbar-toggle {
+border-color: #FFF380; /* #333 original */
+}
+.navbar-toggle {
+position: relative;
+float: right;
+padding: 9px 10px;
+margin-top: 8px;
+margin-right: 15px;
+margin-bottom: 8px;
+background-color: transparent;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px; /* 4px original */
+}
+
+.navbar-toggle .icon-bar {
+  /* margin-bottom:2px; */
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+background-color: #FFF380; /* #fff original */
+}
+
+/* Main Global Nav */
+.navbar {
+	min-height: 110px; /* 50px original */
+}
+.navbar-inverse {
+	background-color: #0C090A;
+	border-color: #080808;
+}
+.navbar-toggle {
+	margin-top:20px;
+}
+.navbar-nav {
+	padding-top: 15px;
+}
+.navbar-brand {
+	padding-top: 0;
+	margin-top: -30px;
+}
+	@media (max-width: 414px) {
+		.navbar-brand {
+			padding-top: 0;
+			margin-top: -50px;
+		} /* Pull Brand up on on certain xs (Extra Small) devices, such as
+	       * small/low resolution phones so it does NOT overflow the navigation background */
+	}
+
+	@media (max-width: 355px) {
+		.navbar-brand {
+			padding-top: 0;
+			margin-top: -65px;
+		} /* Pull Brand up on on certain xs (Extra Small) devices, such as
+		   * small/low resolution phones so it does NOT overflow the navigation background */
+	}
+.navbar-inverse .navbar-brand {
+	color: #f0ad4e; /* orange */
+}
+.navbar-inverse .navbar-brand strong {
+	font-size: 190%; /* make the festival number bigger */
+	font-weight: normal;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #428bca; /* blue */
+/* color: #777; */
+}
+
+
+/* ELEMENT SELECTORS
+===================================*/
+ul {
+	list-style: none;
+}
+a:hover {
+	text-decoration: none;
+}
+#index {
+	background: url(../img/pics/jumbotron.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+  	padding-top: 200px;
+}
+main {
+	background-color: #fff;
+	-webkit-box-shadow: 0 -1px 15px 0 #000;
+	-moz-box-shadow: 0 -1px 15px 0 #000;
+	box-shadow: 0 -1px 15px 0 #000;
+	width: 100%;
+}
+
+/* SHARED SELECTORS
+===================================*/
+.section-subheading {
+	margin-top: 50px;
+}
+	.section-subheading::after {
+		background: #ccc;
+		content: "";
+		display: block;
+		float: right;
+		height: 4px;
+		margin-top: 8px;
+		width: 55%;
+	}
+		@media (max-width: 1199px) {
+			.section-subheading::after{
+				width: 39%;
+			}
+		} /* Reduce the width of the line after sub-titles on not-too-large screens */ 
+
+.mark {
+	background: #f9f2f4;
+	border: 1px solid #f0ad4e;
+	border-radius: 3px;
+	color: #222;
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	font-size: 90%;
+	padding: 2px 4px;
+	text-shadow: 1px 2px 2px #ccc;
+/*	
+color: #c7254e;
+*/}
+
+/* BUTTONS
+===================================*/
+.jumbotron button.close {
+	background: gray;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+}
+.close	{
+	opacity: 1; /* neutralize bootstrap opacity on Close class (original .2) */
+}
+.jumbotron .btn,
+.jumbotron .btn:hover,
+.jumbotron .btn:visited  {
+	border-color: #FFFFC2;
+	border-bottom: 3px solid #FFFFC2;
+}
+.jumbotron .btn:active {
+	border-bottom: 1px solid #FFFFC2;
+	margin-top: 2px;
+}
+
+main .btn {
+	color: #333;
+	background-color: #f0f0f0;
+	border-color: #ccc;
+	border-bottom: 3px solid;
+}
+main .btn:active {
+	border-bottom: 1px solid #ccc;
+	margin-top: 2px;
+} /* to avoid other element around to move vertically on the page
+   * when the button is pressed down, boder-bottom + margin-top =
+   * border-bottom of the button is on a default mode */
+
+main .donate {
+	background-color: #fff;
+	border-color: #222;
+} /* making any donation button stand out
+     with a different background and border color */
+
+aside .btn {
+	margin-top: 10px;
+} /* so any button on the sidebar will span accross the entire width
+   * of the sidebar and have an extra margin at the top to separate
+   * from preceeding texts */
+
+aside .btn:active {
+	margin-top: 12px;
+}
+
+/* JUMBOTRON
+===================================*/
+
+.jumbotron h1,
+.jumbotron p {
+	font-family: 'Cuprum',sans-serif;
+}
+.jumbotron {
+	color: #FBF6D9;
+	display: block;
+	position: relative;
+	background: none;
+	text-shadow: 1px 2px 0 #000;
+	margin-bottom: 20px;
+	min-height: 500px;
+}
+.jumbotron .container {
+	background: rgba(0,0,0,.65);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	padding: 1em 2.5em;
+}
+.jumbotron .container h1 {
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+.jumbotron .container p {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.jumbotron .stress {
+	color: #f0ad4e;
+}
+
+
+/* SUMMARY
+===================================*/
+.summary p,
+.summary {
+	font-family: 'Coustard', serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px; /*14px original*/
+	line-height: 1.7; /* 1.42857143 original */ 
+	color: #333;
+	background-color: #fff;
+	text-align: justify;
+}
+blockquote {
+	font-family: 'Oswald', sans-serif;
+	margin: 30px 0 20px 25px;
+	border-left-color: #428bca;
+}
+
+
+/* CALL TO ACTION
+===================================*/
+
+.call-to-action {
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-top-width: 5px;
+	border-radius: 3px;
+}
+.call-to-action-border {
+	border-top-color: #f0ad4e;
+}
+
+
+/* DONATE
+===================================*/
+.img-border {
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+	-ms-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+	-0-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+	box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+	margin-bottom: 20px;
+}
+
+/* PARTNERS 
+===================================*/
+main h3 {
+	border-bottom: 1px solid #f0ad4e;
+	color: #5a524d;
+	text-transform: uppercase;
+	background-color: #eaeae4;
+	font-size: 16px;
+	padding: 5px 10px;
+	margin: 17px 0 12px;
+}
+#partners,
+aside {
+	margin-bottom: 20px;
+}
+#partners .row a {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+/* ASIDE
+===================================*/
+
+/* aside margin-bottom set in PARTNERS section above */
+aside {
+	margin-top: 10px;
+}
+aside h3 {
+	font-size: .875em;
+}
+aside h5 {
+	color: #428bca;
+	font-weight: bold;
+	letter-spacing: -.2px;
+}
+aside ul {
+-webkit-padding-start: 0; /*40px original */
+}
+/* FOOTER
+===================================*/
+footer {
+	background: rgba(0,0,0,.85);
+	border-top: 3px solid #f0ad4e;
+	-webkit-box-shadow: 0 -1px 15px 0 #000;
+	-moz-box-shadow: 0 -1px 15px 0 #000;
+	box-shadow: 0 -1px 15px 0 #000;
+}
+.footer-menu-wrapper,
+.disclaimer-wrapper {
+	background: url(../img/footerback.png);
+}
+.footer-menu {
+	clear: both;
+	padding: 25px 0;
+	color: #D6D6D6;
+}
+	.footer-menu ul {
+		padding-left: 0;
+	}
+	.footer-menu h4 {
+		border-bottom: 1px solid #4e4e4e;
+		margin-bottom: 3px;
+		padding-bottom: 4px;
+	}
+.footer-line {
+	margin-top: 1em;
+	min-height: 38px;
+}
+	.copyright {
+		color: #f0ad4e; /* orange */
+	}
+/* .disclaimer-wrapper background set above */
+.disclaimer {
+	color: #ccc;
+	font-size: 80%;
+	font-style: italic;
+	padding-top: 1.2em;
+	padding-bottom: .5em;
+}
+
+
+/* INNER PAGE
+===================================*/
+
+#inner-page header .container img {
+	width: 100%;
+}
+
+#inner-page h2 {
+	border-bottom: 3px solid orange;
+	color: #428bca;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.intro {
+	padding-bottom: 1.5em;
+}
+form {
+	margin-bottom: 30px;
+}
+textarea {
+	min-height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FEATURE
+===================================*/
+
+.feature-wrapper {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.feature-panel {
+	background-image: url(../img/featureback.png);
+	background-color: rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+	-moz-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+	-ms-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+	-0-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+	box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+	height: auto;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+.img1 {
+	background: url(../img/feature/hillary-rodham-clinton-1.jpg) no-repeat center top;
+}
+.img2 {
+	background: url(../img/feature/betty-ford-2.jpg) no-repeat center top;
+}
+.img3 {
+	background: url(../img/feature/rosalynn-carter-1.jpg) no-repeat center top;
+}
+.feature-img {
+	background-size: cover;
+	margin-top: -15px;
+	min-height: 150px;
+	width: 100%;
+}
+.badge {
+	position: absolute;
+	top: 20px;
+	left: 35px;
+
+	background: rgba(52,152,219,.65); /* #3498db */
+	width: 60px; /* 70px original */
+	height: 60px; /* 70px original */
+	line-height: 19px; /* 25, 70px original */
+	font-size: 11px; /* 13px original */
+	color: #fff;
+	text-align: center;
+	border-radius: 100%;
+
+	padding-top: 11px; /* 3px original */
+	white-space: normal; /* no-wrap original */
+}
+.feature-title {
+	background: rgba(0,0,0,0.5);
+	top: 118px;
+	padding: 6px;
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	display: block;
+	width: 150px;
+}
+.feature-text {
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 15px;
+}
+.feature-text .blockquote {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 140%;
+	padding: .5em .65em;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------
+ * STATE CHANGES
+ * ------------------------------------------------------------------------------
+ * represented in either:
+ * 1) class name (change happens with Javascript)
+ * 2) pseudo-class (only style changes to elements that are descendants or siblings
+                    of the element in which the pseudo-class applies)
+ * 3) media query (viewport sizes and the like)
+ *
+ * ------------------------------------------------------------------------------ */
+
+.is-hidden {	
+	display: none;
+
+	/*
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	*/
+}

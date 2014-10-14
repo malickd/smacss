@@ -1,0 +1,32 @@
+
+
+
+
+/* ELEMENT SELECTORS
+===================================*/
+
+
+/* SHARED SELECTORS
+===================================*/
+.section-subheading {
+	margin-top: 50px;
+}
+	.section-subheading::after {
+		background: #ccc;
+		content: "";
+		display: block;
+		float: right;
+		height: 4px;
+		margin-top: 8px;
+		width: 55%;
+	}
+		@media (max-width: 1199px) {
+			.section-subheading::after{
+				width: 39%;
+			}
+		} /* Reduce the width of the line after sub-titles on not-too-large screens */ 
+
+
+
+
+
