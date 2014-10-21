@@ -34,6 +34,17 @@
  * ------------------------------------------------------------------------------ */
 
 
+
+/* Icon Bar OR Hamburger Menu */
+.navbar-inverse .navbar-toggle {
+border-color: #FFF380; /* #333 original */
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+background-color: #FFF380; /* #fff original */
+}
+
+
+
 /* home-page background */
 .home-page {    
     background: url(../img/pics/jumbotron.jpg);
@@ -43,13 +54,62 @@
 }
 
 
+/* Jumbotron
+---------------------------------- */
+.jumbotron {
+    color: #FBF6D9;
+    text-shadow: 1px 2px 0 #000;
+}
+.jumbotron .container {    
+    background: rgba(0,0,0,.65);
+}
+.jumbotron p {
+    font-family: 'Cuprum',sans-serif;
+}
+.jumbotron .container p {
+    font-size: 24px;
+}
+.jumbotron .stress {
+    color: #f0ad4e;
+}
 
+
+/* Main Content
+---------------------------------- */
 .main-content-wrapper {    
     background-color: #fff;
-    -webkit-box-shadow: 0 -1px 15px 0 #000;
-    -moz-box-shadow: 0 -1px 15px 0 #000;
-    box-shadow: 0 -1px 15px 0 #000;
 }
+
+.lead {
+    font-family: 'Coustard', serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px; /*14px original*/
+    line-height: 1.7; /* 1.42857143 original */ 
+    color: #333;
+    background-color: #fff;
+    text-align: justify;
+}
+
+
+/* Call-To ACtion
+---------------------------------- */
+.call-to-action-box{
+    border-color: #eee;
+}
+.call-to-action-border {
+    border-top-color: #f0ad4e;
+}
+
+/* Ads
+---------------------------------- */
+.img-border {
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    -ms-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    -0-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+    margin-bottom: 20px;
+}
+
 
 /* Footer
 ---------------------------------- */
@@ -64,10 +124,6 @@
 }
 .copyright-text {
     color: #f0ad4e; /* orange */
-}
-.footer-menu .title {
-    color: #D6D6D6;
-    border-color:  #4e4e4e;
 }
 .fineprint {
     color: #ccc;
@@ -87,7 +143,49 @@
 }
 
 
+/* All Titles
+---------------------------------- */
 
+/* -- jumbotron titles -- */
+.jumbotron .title {
+    font-family: 'Cuprum',sans-serif;
+}
+.jumbotron .title {
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+/* -- main content and sidebar titles -- */
+.section .title,
+.infobox .title {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 17px 0 12px;
+    border-bottom: 1px solid;   
+}
+.section .title {
+    font-size: 16px;
+}
+.infobox .title {
+    font-size: .875em;
+}
+.infobox .title-small {
+    font-weight: bold;
+    letter-spacing: -.2px;
+    color: #428bca;
+}
+.section .title,
+.infobox .title {
+    background-color: #eaeae4;
+    border-color: #f0ad4e;
+    color: #5a524d;
+}
+
+/* -- footer titles-- */
+.footer-menu .title {
+    color: #D6D6D6;
+    border-color:  #4e4e4e;
+}
 
 
 

@@ -27,12 +27,20 @@
  * ------------------------------------------------------------------------------ */
 
 
-
+.main-content-wrapper { 
+    -webkit-box-shadow: 0 -1px 15px 0 #000;
+    -moz-box-shadow: 0 -1px 15px 0 #000;
+    box-shadow: 0 -1px 15px 0 #000;
+}
 .home-page {
     padding-top: 200px;
 }
 .main-content-wrapper {
     width: 100%;
+}
+.call-to-action-section {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* sidebar margin-bottom set in PARTNERS section above */

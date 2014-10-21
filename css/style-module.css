@@ -33,6 +33,9 @@
  *
  * ------------------------------------------------------------------------------ */
 
+
+/* SAMPLES 
+--------------------------
  .module > h2 {
     padding: 5px;
 }
@@ -40,8 +43,7 @@
 .module span {
     padding: 5px;
 }
-
-
+-------------------------- */
 
 
 
@@ -72,34 +74,6 @@
     } /* Hides the utility navigation bar on certain xs (Extra Small) devices, such as
        * small/low resolution phones so it does overflow the navigation background */
 }
-/* Icon Bar OR Hamburger Menu */
-.navbar-inverse .navbar-toggle {
-border-color: #FFF380; /* #333 original */
-}
-.navbar-toggle {
-position: relative;
-float: right;
-padding: 9px 10px;
-margin-top: 8px;
-margin-right: 15px;
-margin-bottom: 8px;
-background-color: transparent;
-background-image: none;
-border: 1px solid transparent;
-border-radius: 4px; /* 4px original */
-}
-
-.navbar-toggle .icon-bar {
-  /* margin-bottom:2px; */
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-background-color: #FFF380; /* #fff original */
-}
-
 /* Main Global Nav */
 .navbar {
     min-height: 110px; /* 50px original */
@@ -148,21 +122,14 @@ background-color: #FFF380; /* #fff original */
 
 /* Jumbotron
 ---------------------------------- */
-.jumbotron h1,
-.jumbotron p {
-    font-family: 'Cuprum',sans-serif;
-}
 .jumbotron {
-    color: #FBF6D9;
     display: block;
     position: relative;
     background: none;
-    text-shadow: 1px 2px 0 #000;
     margin-bottom: 20px;
     min-height: 500px;
 }
 .jumbotron .container {
-    background: rgba(0,0,0,.65);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -170,73 +137,28 @@ background-color: #FFF380; /* #fff original */
     border-radius: 10px;
     padding: 1em 2.5em;
 }
-.jumbotron .container h1 {
-    font-weight: 400;
-    letter-spacing: -1px;
-}
 .jumbotron .container p {
-    font-size: 24px;
     margin-bottom: 30px;
 }
-.jumbotron .stress {
-    color: #f0ad4e;
-}
-
-
-/* Summary
----------------------------------- */
-
-.summary {
-    font-family: 'Coustard', serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px; /*14px original*/
-    line-height: 1.7; /* 1.42857143 original */ 
-    color: #333;
-    background-color: #fff;
-    text-align: justify;
-}
-
-
-
-
 
 
 
 /* Call-To ACtion
 ---------------------------------- */
-.call-to-action {
+.call-to-action-box{
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #eee;
+    border: 1px solid;
     border-top-width: 5px;
     border-radius: 3px;
 }
-.call-to-action-border {
-    border-top-color: #f0ad4e;
-}
 
 
-/* Donate
----------------------------------- */
-.img-border {
-    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
-    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
-    -ms-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
-    -0-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
-    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
-    margin-bottom: 20px;
-}
+
+
 
 /* Partners 
 ---------------------------------- */
-main h3 {
-    border-bottom: 1px solid #f0ad4e;
-    color: #5a524d;
-    text-transform: uppercase;
-    background-color: #eaeae4;
-    font-size: 16px;
-    padding: 5px 10px;
-    margin: 17px 0 12px;
-}
 #partners,
 aside {
     margin-bottom: 20px;
@@ -318,16 +240,6 @@ aside {
 }
 
 
-/* Infobox
----------------------------------- */
-.infobox .title {
-    font-size: .875em;
-}
-.infobox .title-small {
-    color: #428bca;
-    font-weight: bold;
-    letter-spacing: -.2px;
-}
 
 
 
@@ -351,13 +263,6 @@ aside {
     margin-bottom: 3px;
     padding-bottom: 4px;
 }
-
-
-
-
-
-
-
 
 
 /* Inner Page
