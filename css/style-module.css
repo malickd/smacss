@@ -4,178 +4,12 @@
 /* Site:
  * Author: Malick Diomande
  * SMACSS Version of World Children Festival CSS Style Sheet
- * File Created: 2014-10-13
+ * File Created: 2014-10-20
  * Design pattern: SMACSS (Scalable and Modular Architecture for CSS);
  *
- * Original File Created: 2014-09-04
- * Original File Last modified: 2014-10-09  
+ * Original Source File Created: 2014-09-04
+ * Original Source File Last modified: 2014-10-09  
  * ------------------------------------------------------------------- */
-
-
-
-
-
-/* ------------------------------------------------------------------------------
- * I - BASE RULES 
- * ------------------------------------------------------------------------------
- *
- * Uses element selector, descendent selector, child selector with pseudo classes to
- * defines default styling for how an element should look in all occurrences on the page.
- * (no class or ID selectors included) 
- *
- * Notes: 1) Not included - Class or ID selectors
- *        2) included     - html elements
- *
- * ------------------------------------------------------------------------------ */
-
-
-/* CSS Resets
----------------------------------- */
-/* CSS Reset handled by bootstrap.min.css file */
-
-
-/* Typography
----------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Oswald|Cuprum|Coustard|Tulpen+One|Shadows+Into+Light);
-
-
-/* Base Styles
----------------------------------- */
-ul {
-    list-style: none;
-}
-aside ul {
--webkit-padding-start: 0; /*40px original */
-}
-
-
-a:hover {
-    text-decoration: none;
-}
-blockquote {
-    font-family: 'Oswald', sans-serif;
-    margin: 30px 0 20px 25px;
-    border-left-color: #428bca;
-}
-
-/* Form Elements
----------------------------------- */
-form {
-    margin-bottom: 30px;
-}
-textarea {
-    min-height: 150px;
-}
-
-/* ------------------------------------------------------------------------------
- * II - LAYOUT RULES 
- * ------------------------------------------------------------------------------
- *
- * Used to lay MAJOR elements out on the page
- * header, footer, article, aside, #major-element-name, etc. 
- *
- * Notes: 1) Accepted - IDs (#header, #article...)
- *        2) Prefered - Classe selectors (where appropriate) *
- *
- * ------------------------------------------------------------------------------ */
-
-
-/*
-#header, #article, #footer {
-    width: 960px;
-    margin: auto;
-}
-
-#article {
-    border: solid #CCC;
-    border-width: 1px 0 0;
-}
-
-#article {
-    float: left;
-}
-
-#sidebar {
-    float: right;
-}
-
-.l-flipped #article {
-    float: right;
-}
-
-.l-flipped #sidebar {
-    float: left;
-}
-
-
-
-*/
-
-
-
-.home-page {
-    padding-top: 200px;
-}
-.main-content-wrapper {
-    width: 100%;
-}
-
-/* Aside
----------------------------------- */
-/* aside margin-bottom set in PARTNERS section above */
-.sidebar {
-    margin-top: 10px;
-}
-/* Footer
----------------------------------- */
-footer {
-    background: rgba(0,0,0,.85);
-    border-top: 3px solid #f0ad4e;
-    -webkit-box-shadow: 0 -1px 15px 0 #000;
-    -moz-box-shadow: 0 -1px 15px 0 #000;
-    box-shadow: 0 -1px 15px 0 #000;
-}
-.footer-menu-wrapper,
-.disclaimer-wrapper {
-    background: url(../img/footerback.png);
-}
-.footer-menu {
-    clear: both;
-    padding: 25px 0;
-    color: #D6D6D6;
-}
-    .footer-menu ul {
-        padding-left: 0;
-    }
-    .footer-menu h4 {
-        border-bottom: 1px solid #4e4e4e;
-        margin-bottom: 3px;
-        padding-bottom: 4px;
-    }
-.footer-line {
-    margin-top: 1em;
-    min-height: 38px;
-}
-    .copyright {
-        color: #f0ad4e; /* orange */
-    }
-/* .disclaimer-wrapper background set above */
-.disclaimer {
-    color: #ccc;
-    font-size: 80%;
-    font-style: italic;
-    padding-top: 1.2em;
-    padding-bottom: .5em;
-}
-
-
-/* Inner Page
----------------------------------- */
-
-.intro {
-    padding-bottom: 1.5em;
-}
-
 
 
 
@@ -188,19 +22,15 @@ footer {
  *
  * Used to lay MINOR elements out on the page
  * as well as any reusable parts of the design:
- * Carousel, Dialogs, Widgets, Callout, Login Form, Navigation Item,
- * Buttons, Forms, Tables, Lists, etc. 
+ *
+ * For: - Carousel, Dialogs, Widgets,
+ *      - Callout, Navigation Item, Lists
+ *      - Buttons, Forms, Login Form, Tables etc. 
  *
  * Notes: 1) Avoided - IDs and stand-alone element selectors
  *        2) Used    - Only classes names
  *        3) Used    - Descendent or child selectors, preceeded with class names
  *
-
-Reusable Parts of the design
- Button
- Form
- Tables
- Lists
  * ------------------------------------------------------------------------------ */
 
  .module > h2 {
@@ -499,6 +329,37 @@ aside {
     letter-spacing: -.2px;
 }
 
+
+
+/* Form
+---------------------------------- */
+
+.form-intro {
+    padding-bottom: 1.5em;
+}
+
+
+
+
+/* Footer
+---------------------------------- */
+.footer-menu .list {
+    padding-left: 0;
+}
+.footer-menu .title {
+    border-bottom: 1px solid;
+    margin-bottom: 3px;
+    padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
 /* Inner Page
 ---------------------------------- */
 .inner-page .page-title {    
@@ -556,126 +417,5 @@ aside .btn {
 
 aside .btn:active {
     margin-top: 12px;
-}
-
-
-/* ------------------------------------------------------------------------------
- * IV - STATE RULES
- * ------------------------------------------------------------------------------
- * Like sub-module styles and a state styles modify the existing look of an element,
- * it augments and overrides all other styles
- * State Styles particularities: 
- * - Can apply to layout and/or module styles
- * - Indicate a JavaScript dependency.
- *
- * ------------------------------------------------------------------------------ */
-
-.is-active
-.is-module- /* will reside with the module rules and not the other global state rules */
-.is-hidden  !important 
-.is-collapsed
-.is-exapanded
-.is-success
-.is-error {}
-
-
-
-
-
-
-
-
-
-.mark {
-    background: #f9f2f4;
-    border: 1px solid #f0ad4e;
-    border-radius: 3px;
-    color: #222;
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-    font-size: 90%;
-    padding: 2px 4px;
-    text-shadow: 1px 2px 2px #ccc;
-}
-
-/* ------------------------------------------------------------------------------
- * V - THEME RULES
- * ------------------------------------------------------------------------------
- * defines colours and images that give the application or site its look and feel
- * can affect any of the primary types
- * could override base styles like default link colour
- * could change module elements such as chrome colours and borders
- * could affect layout with different arrangements
- * could also alter how states look
- *
- * - Background
- * - Color
- * - Font
- * ------------------------------------------------------------------------------ */
-
-
-/* home-page background */
-.home-page {    
-    background: url(../img/pics/jumbotron.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-
-.main-content-wrapper {    
-    background-color: #fff;
-    -webkit-box-shadow: 0 -1px 15px 0 #000;
-    -moz-box-shadow: 0 -1px 15px 0 #000;
-    box-shadow: 0 -1px 15px 0 #000;
-}
-
-/* Inner Page
----------------------------------- */
-.inner-page header .container img {
-    width: 100%;
-}
-
-.inner-page .page-title {
-    border-bottom: 3px solid orange;
-    color: #428bca;
-}
-
-
-
-
-/* in module-name.css */
-.mod {
-    border: 1px solid;
-}
-
-/* in theme.css */
-.mod {
-    border-color: blue;
-}
-
-/* font sizes */
-
-
-
-/* ------------------------------------------------------------------------------
- * VI - STATE CHANGES
- * ------------------------------------------------------------------------------
- * represented in either:
- * 1) class name (change happens with Javascript)
- * 2) pseudo-class (only style changes to elements that are descendants or siblings
-                    of the element in which the pseudo-class applies)
- * 3) media query (viewport sizes and the like)
- *
- * ------------------------------------------------------------------------------ */
-
-.is-hidden {    
-    display: none;
-
-    /*
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    */
 }
 

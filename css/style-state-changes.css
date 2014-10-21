@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Site:
+ * Author: Malick Diomande
+ * SMACSS Version of World Children Festival CSS Style Sheet
+ * File Created: 2014-10-20
+ * Design pattern: SMACSS (Scalable and Modular Architecture for CSS);
+ *
+ * Original Source File Created: 2014-09-04
+ * Original Source File Last modified: 2014-10-09  
+ * ------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------
+ * VI - STATE CHANGES
+ * ------------------------------------------------------------------------------
+ * represented in either:
+ * 1) class name (change happens with Javascript)
+ * 2) pseudo-class (only style changes to elements that are descendants or siblings
+                    of the element in which the pseudo-class applies)
+ * 3) media query (viewport sizes and the like)
+ *
+ * ------------------------------------------------------------------------------ */
+
+.is-hidden {    
+    display: none;
+
+    /*
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    */
+}
+

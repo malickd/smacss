@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Site:
+ * Author: Malick Diomande
+ * SMACSS Version of World Children Festival CSS Style Sheet
+ * File Created: 2014-10-20
+ * Design pattern: SMACSS (Scalable and Modular Architecture for CSS);
+ *
+ * Original Source File Created: 2014-09-04
+ * Original Source File Last modified: 2014-10-09  
+ * ------------------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------------------------------
+ * II - LAYOUT RULES 
+ * ------------------------------------------------------------------------------
+ *
+ * Used to lay MAJOR elements out on the page
+ * header, footer, article, aside, #major-element-name, etc. 
+ *
+ * Notes: 1) Accepted - IDs (#header, #article...)
+ *        2) Prefered - Classe selectors (where appropriate) *
+ *
+ * ------------------------------------------------------------------------------ */
+
+
+
+.home-page {
+    padding-top: 200px;
+}
+.main-content-wrapper {
+    width: 100%;
+}
+
+/* sidebar margin-bottom set in PARTNERS section above */
+.sidebar {
+    margin-top: 10px;
+}
+
+/* Footer
+---------------------------------- */
+.footer-border {
+    border-top: 3px solid;
+}
+.footer-shadow {
+    -webkit-box-shadow: 0 -1px 15px 0 #000;
+    -moz-box-shadow: 0 -1px 15px 0 #000;
+    box-shadow: 0 -1px 15px 0 #000;
+}
+.footer-menu {
+    clear: both;
+    padding: 25px 0;
+}
+.footer-single-line {
+    margin-top: 1em;
+    min-height: 38px;
+}
+.fineprint {
+    padding-top: 1.2em;
+    padding-bottom: .5em;
+}
+
+
+
+
+
+
+

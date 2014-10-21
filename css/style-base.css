@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Site:
+ * Author: Malick Diomande
+ * SMACSS Version of World Children Festival CSS Style Sheet
+ * File Created: 2014-10-20
+ * Design pattern: SMACSS (Scalable and Modular Architecture for CSS);
+ *
+ * Original Source File Created: 2014-09-04
+ * Original Source File Last modified: 2014-10-09  
+ * ------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------------------------------
+ * I - BASE RULES 
+ * ------------------------------------------------------------------------------
+ *
+ * Uses element selector, descendent selector, child selector with pseudo classes to
+ * defines default styling for how an element should look in all occurrences on the page.
+ * (no class or ID selectors included) 
+ *
+ * Notes: 1) Not included - Class or ID selectors
+ *        2) included     - html elements
+ *
+ * ------------------------------------------------------------------------------ */
+
+
+/* CSS Resets
+---------------------------------- */
+/* CSS Reset handled by bootstrap.min.css file */
+
+
+/* Typography
+---------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Oswald|Cuprum|Coustard|Tulpen+One|Shadows+Into+Light);
+
+
+/* Base Styles
+---------------------------------- */
+ul {
+    list-style: none;
+}
+aside ul {
+-webkit-padding-start: 0; /*40px original */
+}
+a:hover {
+    text-decoration: none;
+}
+blockquote {
+    font-family: 'Oswald', sans-serif;
+    margin: 30px 0 20px 25px;
+    border-left-color: #428bca;
+}
+
+/* Form Elements
+---------------------------------- */
+form {
+    margin-bottom: 30px;
+}
+textarea {
+    min-height: 150px;
+}

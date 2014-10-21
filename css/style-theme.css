@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Site:
+ * Author: Malick Diomande
+ * SMACSS Version of World Children Festival CSS Style Sheet
+ * File Created: 2014-10-20
+ * Design pattern: SMACSS (Scalable and Modular Architecture for CSS);
+ *
+ * Original Source File Created: 2014-09-04
+ * Original Source File Last modified: 2014-10-09  
+ * ------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------
+ * V - THEME RULES
+ * ------------------------------------------------------------------------------
+ * defines colours and images that give the application or site its look and feel
+ * can affect any of the primary types
+ * could override base styles like default link colour
+ * could change module elements such as chrome colours and borders
+ * could affect layout with different arrangements
+ * could also alter how states look
+ *
+ * - Background
+ * - Color
+ * - Font
+ * ------------------------------------------------------------------------------ */
+
+
+/* home-page background */
+.home-page {    
+    background: url(../img/pics/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.main-content-wrapper {    
+    background-color: #fff;
+    -webkit-box-shadow: 0 -1px 15px 0 #000;
+    -moz-box-shadow: 0 -1px 15px 0 #000;
+    box-shadow: 0 -1px 15px 0 #000;
+}
+
+/* Footer
+---------------------------------- */
+.footer-bg-default {
+    background: rgba(0,0,0,.85);
+}
+.footer-bg-pattern {
+    background: url(../img/footerback.png);
+}
+.footer-border {
+    color: #f0ad4e; /* orange */
+}
+.copyright-text {
+    color: #f0ad4e; /* orange */
+}
+.footer-menu .title {
+    color: #D6D6D6;
+    border-color:  #4e4e4e;
+}
+.fineprint {
+    color: #ccc;
+    font-size: 80%;
+    font-style: italic;
+}
+
+/* Inner Page
+---------------------------------- */
+.inner-page header .container img {
+    width: 100%;
+}
+
+.inner-page .page-title {
+    border-bottom: 3px solid orange;
+    color: #428bca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* in module-name.css */
+.mod {
+    border: 1px solid;
+}
+
+/* in theme.css */
+.mod {
+    border-color: blue;
+}
+
+/* font sizes */
+
