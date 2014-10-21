@@ -6,6 +6,9 @@
  * SMACSS Version of World Children Festival CSS Style Sheet
  * File Created: 2014-10-13
  * Design pattern: SMACSS (Scalable and Modular Architecture for CSS);
+ *
+ * Original File Created: 2014-09-04
+ * Original File Last modified: 2014-10-09  
  * ------------------------------------------------------------------- */
 
 
@@ -21,13 +24,14 @@
  * (no class or ID selectors included) 
  *
  * Notes: 1) Not included - Class or ID selectors
- *        2) inculded     - html elements
+ *        2) included     - html elements
  *
  * ------------------------------------------------------------------------------ */
 
 
 /* CSS Resets
 ---------------------------------- */
+/* CSS Reset handled by bootstrap.min.css file */
 
 
 /* Typography
@@ -37,32 +41,31 @@
 
 /* Base Styles
 ---------------------------------- */
-body, form {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    color: #039;
-}
-
-a:hover {
-    color: #03F;    
-}
-
-
-
-
-
-
-
 ul {
     list-style: none;
 }
+aside ul {
+-webkit-padding-start: 0; /*40px original */
+}
+
+
 a:hover {
     text-decoration: none;
 }
+blockquote {
+    font-family: 'Oswald', sans-serif;
+    margin: 30px 0 20px 25px;
+    border-left-color: #428bca;
+}
 
+/* Form Elements
+---------------------------------- */
+form {
+    margin-bottom: 30px;
+}
+textarea {
+    min-height: 150px;
+}
 
 /* ------------------------------------------------------------------------------
  * II - LAYOUT RULES 
@@ -77,7 +80,7 @@ a:hover {
  * ------------------------------------------------------------------------------ */
 
 
-
+/*
 #header, #article, #footer {
     width: 960px;
     margin: auto;
@@ -106,44 +109,23 @@ a:hover {
 
 
 
+*/
 
 
 
-
-#index {
-    background: url(../img/pics/jumbotron.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.home-page {
     padding-top: 200px;
 }
-main {
-    background-color: #fff;
-    -webkit-box-shadow: 0 -1px 15px 0 #000;
-    -moz-box-shadow: 0 -1px 15px 0 #000;
-    box-shadow: 0 -1px 15px 0 #000;
+.main-content-wrapper {
     width: 100%;
 }
 
 /* Aside
 ---------------------------------- */
 /* aside margin-bottom set in PARTNERS section above */
-aside {
+.sidebar {
     margin-top: 10px;
 }
-aside h3 {
-    font-size: .875em;
-}
-aside h5 {
-    color: #428bca;
-    font-weight: bold;
-    letter-spacing: -.2px;
-}
-aside ul {
--webkit-padding-start: 0; /*40px original */
-}
-
-
 /* Footer
 ---------------------------------- */
 footer {
@@ -189,25 +171,9 @@ footer {
 
 /* Inner Page
 ---------------------------------- */
-#inner-page header .container img {
-    width: 100%;
-}
 
-#inner-page h2 {
-    border-bottom: 3px solid orange;
-    color: #428bca;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
 .intro {
     padding-bottom: 1.5em;
-}
-form {
-    margin-bottom: 30px;
-}
-textarea {
-    min-height: 150px;
 }
 
 
@@ -389,7 +355,7 @@ background-color: #FFF380; /* #fff original */
 
 /* Summary
 ---------------------------------- */
-.summary p,
+
 .summary {
     font-family: 'Coustard', serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px; /*14px original*/
@@ -398,11 +364,11 @@ background-color: #FFF380; /* #fff original */
     background-color: #fff;
     text-align: justify;
 }
-blockquote {
-    font-family: 'Oswald', sans-serif;
-    margin: 30px 0 20px 25px;
-    border-left-color: #428bca;
-}
+
+
+
+
+
 
 
 /* Call-To ACtion
@@ -522,8 +488,26 @@ aside {
 }
 
 
+/* Infobox
+---------------------------------- */
+.infobox .title {
+    font-size: .875em;
+}
+.infobox .title-small {
+    color: #428bca;
+    font-weight: bold;
+    letter-spacing: -.2px;
+}
 
-/* Buttons
+/* Inner Page
+---------------------------------- */
+.inner-page .page-title {    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Button
 ---------------------------------- */
 .jumbotron button.close {
     background: gray;
@@ -627,6 +611,38 @@ aside .btn:active {
  * - Color
  * - Font
  * ------------------------------------------------------------------------------ */
+
+
+/* home-page background */
+.home-page {    
+    background: url(../img/pics/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.main-content-wrapper {    
+    background-color: #fff;
+    -webkit-box-shadow: 0 -1px 15px 0 #000;
+    -moz-box-shadow: 0 -1px 15px 0 #000;
+    box-shadow: 0 -1px 15px 0 #000;
+}
+
+/* Inner Page
+---------------------------------- */
+.inner-page header .container img {
+    width: 100%;
+}
+
+.inner-page .page-title {
+    border-bottom: 3px solid orange;
+    color: #428bca;
+}
+
+
+
 
 /* in module-name.css */
 .mod {
