@@ -142,6 +142,27 @@ background-color: #FFF380; /* #fff original */
     color: #428bca;
 }
 
+/* Button
+---------------------------------- */
+button.btn-close {
+    background: gray;    
+    opacity: 1; /* neutralize bootstrap opacity on Close class (original .2) */
+}
+.jumbotron .btn {
+    border-color: #FFFFC2;
+}
+main .btn {
+    background-color: #f0f0f0;
+}
+main .btn:active {
+    border-color: #ccc;
+} 
+main .btn-stand-out {
+    background-color: #fff;
+} /* making any donation button stand out
+     with a different background and border color */
+
+
 
 /* All Titles
 ---------------------------------- */
