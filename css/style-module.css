@@ -54,33 +54,19 @@
 /* Navbar
 ---------------------------------- */
 
-/* Utilitilies and Search bar */
+/* -- Utilitilies and Search bar -- */
 .navbar-util {
-    color: #fff;
     margin-top: 10px;
-    font-size: 13px !important;
 }
-    .navbar-util ul li {
-        display: inline;
-        padding: 0 10px;
-    }
     .navbar-form {
         margin-top: 0;
         padding: 0
     }
-@media (max-width: 414px) {
-    .hidden-xs-portrait {
-        display: none;
-    } /* Hides the utility navigation bar on certain xs (Extra Small) devices, such as
-       * small/low resolution phones so it does overflow the navigation background */
-}
-/* Main Global Nav */
+
+
+/* -- Main Global Nav -- */
 .navbar {
     min-height: 110px; /* 50px original */
-}
-.navbar-inverse {
-    background-color: #0C090A;
-    border-color: #080808;
 }
 .navbar-toggle {
     margin-top:20px;
@@ -92,32 +78,7 @@
     padding-top: 0;
     margin-top: -30px;
 }
-    @media (max-width: 414px) {
-        .navbar-brand {
-            padding-top: 0;
-            margin-top: -50px;
-        } /* Pull Brand up on on certain xs (Extra Small) devices, such as
-           * small/low resolution phones so it does NOT overflow the navigation background */
-    }
 
-    @media (max-width: 355px) {
-        .navbar-brand {
-            padding-top: 0;
-            margin-top: -65px;
-        } /* Pull Brand up on on certain xs (Extra Small) devices, such as
-           * small/low resolution phones so it does NOT overflow the navigation background */
-    }
-.navbar-inverse .navbar-brand {
-    color: #f0ad4e; /* orange */
-}
-.navbar-inverse .navbar-brand strong {
-    font-size: 190%; /* make the festival number bigger */
-    font-weight: normal;
-}
-.navbar-inverse .navbar-nav>li>a {
-    color: #428bca; /* blue */
-/* color: #777; */
-}
 
 
 /* Jumbotron
@@ -129,17 +90,17 @@
     margin-bottom: 20px;
     min-height: 500px;
 }
-.jumbotron .container {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    padding: 1em 2.5em;
-}
-.jumbotron .container p {
-    margin-bottom: 30px;
-}
+    .jumbotron .container {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+        padding: 1em 2.5em;
+    }
+        .jumbotron .container p {
+            margin-bottom: 30px;
+        }
 
 
 
@@ -154,19 +115,16 @@
 }
 
 
-
-
-
 /* Partners 
 ---------------------------------- */
-#partners,
-aside {
+.partners {
     margin-bottom: 20px;
 }
-#partners .row a {
-    display: inline-block;
-    margin-bottom: 10px;
-}
+    .partners .row a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
 
 /* Feature
 ---------------------------------- */
@@ -176,28 +134,11 @@ aside {
 }
 
 .feature-panel {
-    background-image: url(../img/featureback.png);
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
-    -moz-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
-    -ms-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
-    -0-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
-    box-shadow: 2px 3px 2px rgba(0,0,0,.3);
     height: auto;
     padding-top: 15px;
     padding-bottom: 5px;
 }
-.img1 {
-    background: url(../img/feature/hillary-rodham-clinton-1.jpg) no-repeat center top;
-}
-.img2 {
-    background: url(../img/feature/betty-ford-2.jpg) no-repeat center top;
-}
-.img3 {
-    background: url(../img/feature/rosalynn-carter-1.jpg) no-repeat center top;
-}
 .feature-img {
-    background-size: cover;
     margin-top: -15px;
     min-height: 150px;
     width: 100%;
@@ -209,16 +150,7 @@ aside {
     width: 60px; /* 70px original */
     height: 60px; /* 70px original */
     border-radius: 100%;
-}
-.badge {
-    background: rgba(52,152,219,.65); /* #3498db */
-    font-size: 11px; /* 13px original */
-    line-height: 19px; /* 25, 70px original */
-    color: #fff;
-    text-align: center;
-
     padding-top: 11px; /* 3px original */
-    white-space: normal; /* no-wrap original */
 }
 .feature-title {
     top: 118px;
@@ -226,11 +158,6 @@ aside {
     position: absolute;
     display: block;
     width: 150px;
-}
-.feature-title {
-    background: rgba(0,0,0,0.5);
-    color: white;
-    font-weight: 700;
 }
 .feature-text {
     margin-left: 8px;
@@ -240,13 +167,6 @@ aside {
 .feature-text .blockquote {
     padding: .5em .65em;
 }
-.feature-text .blockquote {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 140%;
-}
-
-
-
 
 
 /* Form
@@ -292,11 +212,6 @@ button.btn-close {
     border-bottom: 3px solid;
 }
 
-/* -- Depressed effect -- */
-.btn:active {
-    border-bottom: 1px solid;
-    margin-top: 2px;
-}
 /* to avoid other element around to move vertically on the page
    * when the button is pressed down, boder-bottom + margin-top =
    * border-bottom of the button when on default :link mode */
@@ -304,9 +219,3 @@ button.btn-close {
     margin-top: 10px;
 } /* so any button on the sidebar will have an extra margin at the top to separate
    * from preceeding texts */
-
-.sidebar .btn:active {
-    margin-top: 12px;
-}
-
-

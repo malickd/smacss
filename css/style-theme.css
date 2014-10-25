@@ -9,7 +9,7 @@
  *
  * Original Source File Created: 2014-09-04
  * Original Source File Last modified: 2014-10-09  
- * ------------------------------------------------------------------- */
+ * ----------------------------------------------------------------------------- */
 
 
 
@@ -35,14 +35,56 @@
 
 
 
-/* Icon Bar OR Hamburger Menu */
-.navbar-inverse .navbar-toggle {
-border-color: #FFF380; /* #333 original */
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-background-color: #FFF380; /* #fff original */
+/* SAMPLES 
+--------------------------
+
+in module-name.css
+.mod {
+    border: 1px solid;
 }
 
+in theme.css
+.mod {
+    border-color: blue;
+}
+
+font sizes
+------------------------------------*/
+
+
+/* Navigation
+---------------------------------- */
+
+/* -- Utilitilies and Search bar -- */
+.navbar-util {
+    color: #fff;
+    font-size: 13px !important;
+}
+
+/* -- Main Global Nav -- */
+.navbar-inverse {
+    background-color: #0C090A;
+    border-color: #080808;
+}    
+.navbar-inverse .navbar-brand {
+    color: #f0ad4e; /* orange */
+}
+.navbar-inverse .navbar-brand strong {
+    font-size: 190%; /* make the festival number bigger */
+    font-weight: normal;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #428bca; /* blue */
+/* color: #777; */
+}
+
+/* Icon Bar OR Hamburger Menu */
+.navbar-inverse .navbar-toggle {
+    border-color: #FFF380; /* #333 original */
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #FFF380; /* #fff original */
+}
 
 
 /* home-page background */
@@ -110,6 +152,47 @@ background-color: #FFF380; /* #fff original */
     margin-bottom: 20px;
 }
 
+/* Feature
+---------------------------------- */
+.feature-panel {
+    background-image: url(../img/featureback.png);
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+    -ms-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+    -0-box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+    box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+}
+.feature-img1 {
+    background: url(../img/feature/hillary-rodham-clinton-1.jpg) no-repeat center top;
+}
+.feature-img2 {
+    background: url(../img/feature/betty-ford-2.jpg) no-repeat center top;
+}
+.feature-img3 {
+    background: url(../img/feature/rosalynn-carter-1.jpg) no-repeat center top;
+}
+.feature-img {
+    background-size: cover;
+}
+.badge {
+    background: rgba(52,152,219,.65); /* #3498db */
+    font-size: 11px; /* 13px original */
+    line-height: 19px; /* 25, 70px original */
+    color: #fff;
+    text-align: center;
+    white-space: normal; /* no-wrap original */
+}
+.feature-title {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: 700;
+}
+.feature-text .blockquote {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 140%;
+}
+
 
 /* Footer
 ---------------------------------- */
@@ -142,15 +225,19 @@ background-color: #FFF380; /* #fff original */
     color: #428bca;
 }
 
+
+
 /* Button
 ---------------------------------- */
 button.btn-close {
     background: gray;    
     opacity: 1; /* neutralize bootstrap opacity on Close class (original .2) */
 }
+
 .jumbotron .btn {
     border-color: #FFFFC2;
 }
+
 main .btn {
     background-color: #f0f0f0;
 }
@@ -159,8 +246,8 @@ main .btn:active {
 } 
 main .btn-stand-out {
     background-color: #fff;
-} /* making any donation button stand out
-     with a different background and border color */
+} /* Make buttons stand out with a different background and border color
+     Can be used for Donation button for instancee */
 
 
 
@@ -207,26 +294,3 @@ main .btn-stand-out {
     color: #D6D6D6;
     border-color:  #4e4e4e;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* in module-name.css */
-.mod {
-    border: 1px solid;
-}
-
-/* in theme.css */
-.mod {
-    border-color: blue;
-}
-
-/* font sizes */
-

@@ -42,11 +42,11 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/* sidebar margin-bottom set in PARTNERS section above */
 .sidebar {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 
 /* Footer
 ---------------------------------- */
@@ -70,10 +70,3 @@
     padding-top: 1.2em;
     padding-bottom: .5em;
 }
-
-
-
-
-
-
-

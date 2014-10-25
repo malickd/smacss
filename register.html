@@ -38,7 +38,7 @@
       	<div class="row navbar-util hidden-xs-portrait">      		
 
       		<div class="col-xs-6 col-sm-5 col-sm-push-4 text-right">
-      			<ul>
+      			<ul class="list-inline">
 					<li><i class="fa fa-car"></i> Directions</li>
 					<li><i class="fa fa-phone fa-1x"></i> +1 202 530 1000</li>
 				</ul>
@@ -208,7 +208,7 @@
 	                                <div class="row">
 		                                <div class="col-md-9 col-md-push-3">
 		                                	<div id="success"></div>
-			                                <button type="submit" class="btn btn-xl">Register</button>
+			                                <button type="submit" class="btn btn-default btn-xl">Register</button>
 		                                </div>
 	                                </div>
 			                            	
@@ -218,9 +218,12 @@
 
 					</section>
 
-		        	<section class="section hidden-xs" id="partners">        		
+		        	<!-- PARTNERS
+		        	================================= -->
+
+		        	<section class="section hidden-xs partners" id="partners">        		
 		        		<h3 class="title">Partners and Supporters</h3>
-			            <div class="row partners">
+			            <div class="row">
 			                <div class="col-md-2 col-sm-4">
 			                    <a target="_blank" href="http://www.icaf.org" title="ICAF">
 			                        <img src="img/partners/logo-gray-icaf.jpg" class="img-responsive img-centered" alt="Logo ICAF">
@@ -253,7 +256,7 @@
 			                </div>
 			            </div> <!-- END.row .partners -->
 
-			            <div class="row partners">			            	
+			            <div class="row">			            	
 			                 <div class="col-md-2 col-sm-4">
 			                    <a target="_blank" href="http://www.insea.org" title="InSEA">
 			                        <img src="img/partners/logo-gray-insea.png" class="img-responsive img-centered" alt="Logo InSEA">
@@ -286,7 +289,7 @@
 			                </div>
 			            </div> <!-- END.row .partners -->
 
-			            <div class="row partners">	            	
+			            <div class="row">	            	
 			                 <div class="col-md-2 col-sm-4">
 			                    <a target="_blank" href="http://tbd.com/tv" title="ABC 7 News Channel 8">
 			                        <img src="img/partners/logo-gray-abc7news.png" class="img-responsive img-centered" alt="Logo ABC 7 News Channel 8">
@@ -314,43 +317,13 @@
 			                </div>
 			            </div> <!-- END.row .partners -->
 
-				    </section>
-
-			            <div class="row partners">	            	
-			                 <div class="col-md-2 col-sm-4">
-			                    <a target="_blank" href="aaaaaaaaa" title="ABC 7 News Channel 8">
-			                        <img src="img/partners/logo-gray-abc7news.png" class="img-responsive img-centered" alt="Logo ABC 7 News Channel 8">
-			                    </a>
-			                </div>			            	
-			                 <div class="col-md-2 col-sm-4">
-			                    <a target="_blank" href="aaaaaaaaa" title="MHz Networks">
-			                        <img src="img/partners/logo-gray-mhz-networks.jpg" class="img-responsive img-centered" alt="Logo MHz Networks">
-			                    </a>
-			                </div>			            	
-			                 <div class="col-md-2 col-sm-4">
-			                    <a target="_blank" href="aaaaaaaaa" title="ABC 7">
-			                        <img src="img/partners/logo-gray-abc7.png" class="img-responsive img-centered" alt="Logo ABC 7">
-			                    </a>
-			                </div>	            	
-			                 <div class="col-md-2 col-sm-4">
-			                    <a target="_blank" href="aaaaaaaaa" title="Olapic">
-			                        <img src="img/partners/logo-gray-olapic.jpg" class="img-responsive img-centered" alt="Logo Olapic">
-			                    </a>
-			                </div>			            	
-			                 <div class="col-md-2 col-sm-4">
-			                    <a target="_blank" href="aaaaaaaaa" title="Wisebloom">
-			                        <img src="img/partners/logo-gray-wisebloom.jpg" class="img-responsive img-centered" alt="Logo wisebloom">
-			                    </a>
-			                </div>
-			            </div> <!-- END.row .partners -->
-
 				    </section>	
 
 		        </div> <!-- END.row main content -->
 
 		        <!-- SIDEBAR
 		        ================================= -->
-		        <aside class="col-sm-3">
+		        <aside class="col-sm-3 sidebar">
 		        	<ul>
 		        		<li>
 		        			<div class="infobox">
@@ -366,6 +339,7 @@
 				          		<p><a class="btn btn-default btn-lg btn-block" href="contact.html" role="button">Contact Form <i class="fa fa-file-text-o"></i></a></p>
 		        			</div>
 		        		</li>
+
 		        		<li>
 		        			<div class="infobox">
 		        				<h3 class="title">Information</h3>
@@ -378,6 +352,7 @@
 		        				</ul>
 		        			</div>
 		        		</li>
+
 		        		<li>
 		        			<div class="infobox">
 		        				<h3 class="title">Social Networks</h3>
@@ -389,6 +364,7 @@
 		        				</ul>
 		        			</div>
 		        		</li>
+
 		        		<li>
 		        			<div class="infobox">
 		        				<h3 class="title">Resources</h3>
@@ -402,13 +378,14 @@
 		        				</ul>
 		        			</div>
 		        		</li>
+		        		
 		        		<li>
 		        			<div class="infobox">
 		        				<h3 class="title">Donate</h3>
 		        				<ul>
 		        					<li>
 		        					You can support us with as little as a dollar a week and be part of this wonderful event.<br></li>
-		        					<li><a class="btn btn-default btn-lg btn-block donate" href="#" role="button">DONATE <i class="fa fa-leaf"></i></a></li>
+		        					<li><a class="btn btn-default btn-lg btn-block btn-stand-out" href="#" role="button">DONATE <i class="fa fa-leaf"></i></a></li>
 		        				</ul>
 		        			</div>
 		        		</li>

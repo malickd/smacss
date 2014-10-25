@@ -38,3 +38,25 @@
     */
 }
 
+@media (max-width: 414px) {
+    .hidden-xs-portrait {
+        display: none;
+    } /* Hides the utility navigation bar on certain xs (Extra Small) devices, such as
+       * small/low resolution phones so it does overflow the navigation background */
+}
+
+@media (max-width: 414px) {
+    .navbar-brand {
+        padding-top: 0;
+        margin-top: -50px;
+    } /* Pull Brand up on on certain xs (Extra Small) devices, such as
+       * small/low resolution phones so it does NOT overflow the navigation background */
+}
+
+@media (max-width: 355px) {
+    .navbar-brand {
+        padding-top: 0;
+        margin-top: -65px;
+    } /* Pull Brand up on on certain xs (Extra Small) devices, such as
+       * small/low resolution phones so it does NOT overflow the navigation background */
+}
